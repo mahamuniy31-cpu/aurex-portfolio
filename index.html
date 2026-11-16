@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AUREX — Yash Mahamuni | Frontend Developer &amp; UI Specialist</title>
+
+  <!-- SEO & Social Sharing Metadata -->
+  <meta name="description" content="AUREX is a premier personal developer portfolio for Yash Mahamuni, Frontend Developer at Code Alpha Internship Program. Built with pure HTML5, CSS3, and Vanilla JavaScript." />
+  <meta name="keywords" content="Yash Mahamuni, AUREX, Frontend Developer, Code Alpha Internship, Portfolio, Vanilla JavaScript, HTML5, CSS3, Web Developer" />
+  <meta name="author" content="Yash Mahamuni" />
+  <meta name="theme-color" content="#09090d" />
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="AUREX — Personal Developer Portfolio" />
+  <meta property="og:description" content="Turning Ideas Into Digital Experiences. Crafted with pure HTML5, CSS3, and Vanilla JavaScript for Code Alpha." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/aurex-preview.svg" />
+  <meta property="og:url" content="https://mahamuniy31-cpu.github.io/aurex-portfolio/" />
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AUREX — Yash Mahamuni | Frontend Developer" />
+  <meta name="twitter:description" content="Building Ideas. Creating Digital Experiences. Built with zero dependencies." />
+  <meta name="twitter:image" content="assets/images/aurex-preview.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-logo">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 2 22 22 22"></polygon></svg>
+      </div>
+      <span>AUREX</span>
+    </div>
+    <div class="loader-pulse"></div>
+  </div>
+
+  <!-- ========================================================================
+       A. STICKY NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="AUREX Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 2 22 22 22"></polygon></svg>
+        </div>
+        <span>AUREX</span>
+        <span class="brand-badge">DEV</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Navigation Actions (Theme toggle, Availability pill, Mobile hamburger) -->
+      <div class="nav-actions">
+        <!-- Availability indicator -->
+        <div class="availability-pill" title="Currently open for frontend roles and internships">
+          <span class="status-dot"></span>
+          <span>Available for Work</span>
+        </div>
+
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark and Light Theme" title="Toggle Theme">
+          <!-- Sun icon (for light mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon icon (for dark mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Mobile Navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link active">01. Home <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+      <li><a href="#about" class="mobile-nav-link">02. About <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+      <li><a href="#skills" class="mobile-nav-link">03. Skills <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+      <li><a href="#projects" class="mobile-nav-link">04. Projects <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+      <li><a href="#journey" class="mobile-nav-link">05. Journey <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+      <li><a href="#services" class="mobile-nav-link">06. Services <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+      <li><a href="#resume" class="mobile-nav-link">07. Resume <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+      <li><a href="#contact" class="mobile-nav-link">08. Contact <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+    </ul>
+
+    <div class="mobile-menu-footer">
+      <div class="availability-pill" style="display:inline-flex; align-self: flex-start;">
+        <span class="status-dot"></span>
+        <span>Open for Opportunities</span>
+      </div>
+      <p style="font-size:0.85rem; color:var(--text-muted);">AUREX • Code Alpha Internship Program</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         B. HERO SECTION
+         ======================================================================== -->
+    <section class="hero" id="home">
+      <!-- Ambient Background Effects -->
+      <div class="hero-ambient">
+        <div class="ambient-glow-1"></div>
+        <div class="ambient-glow-2"></div>
+        <div class="ambient-grid"></div>
+        <canvas id="hero-particle-canvas"></canvas>
+      </div>
+
+      <div class="container hero-grid">
+        <!-- Hero Content (Left) -->
+        <div class="hero-content reveal-slide-right">
+          <div class="hero-badge-wrapper">
+            <span class="hero-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              CODE ALPHA INTERNSHIP // FRONTEND
+            </span>
+          </div>
+
+          <!-- Customizable Name Intro -->
+          <!-- CUSTOMIZABLE: Replace with your name if desired -->
+          <p class="hero-intro">HELLO, I'M YASH MAHAMUNI</p>
+
+          <h1 class="hero-title">
+            Turning Ideas Into <br />
+            <span class="gradient-text">Digital Experiences.</span>
+          </h1>
+
+          <!-- Animated Dynamic Role Reveal -->
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">&gt;</span>
+            <span id="hero-role-text" class="role-typing"></span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            I'm a passionate developer who enjoys building modern, responsive, and user-friendly digital experiences.
+          </p>
+
+          <!-- Customizable Information Chips -->
+          <div class="hero-chips">
+            <span class="hero-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <!-- CUSTOMIZABLE: Location -->
+              India (Open to Remote)
+            </span>
+            <span class="hero-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              Vanilla JS &amp; Modern CSS
+            </span>
+            <span class="hero-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              100% Responsive Design
+            </span>
+          </div>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="assets/resume/Yash_Mahamuni_Resume.pdf" download="Yash_Mahamuni_Resume.pdf" class="btn btn-secondary" title="Download PDF Resume">
+              <span>Download Resume</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Contact Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Social Media Icons Bar -->
+          <div class="hero-socials">
+            <a href="https://github.com/mahamuniy31-cpu" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="mailto:mahamuniy31@gmail.com" class="social-link" title="Send Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/yash-mahamuni-993b09442?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual (Right: 3D Tilt Developer Card) -->
+        <div class="hero-visual reveal-slide-left">
+          <div class="developer-card-wrapper">
+            <div class="developer-card" data-tilt>
+              <!-- Window top bar -->
+              <div class="card-header-bar">
+                <div class="window-dots">
+                  <span class="window-dot dot-red"></span>
+                  <span class="window-dot dot-yellow"></span>
+                  <span class="window-dot dot-green"></span>
+                </div>
+                <span class="card-filename">aurex.developer.profile</span>
+              </div>
+
+              <!-- Stylized Developer Avatar -->
+              <div class="card-avatar-container">
+                <img src="assets/images/avatar.svg" alt="Yash Mahamuni — Developer Avatar" width="400" height="400" loading="eager" />
+              </div>
+
+              <!-- Floating Interactive Badges -->
+              <div class="float-badge float-badge-1">
+                <div class="badge-icon-box icon-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <div class="badge-text-primary">Code Alpha Intern</div>
+                  <div class="badge-text-secondary">Frontend Track • 2026</div>
+                </div>
+              </div>
+
+              <div class="float-badge float-badge-2">
+                <div class="badge-icon-box icon-cyan">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                </div>
+                <div>
+                  <div class="badge-text-primary">Vanilla JS &amp; CSS3</div>
+                  <div class="badge-text-secondary">Zero Bloat • Blazing Fast</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <span>SCROLL DOWN</span>
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ========================================================================
+         C. ABOUT ME SECTION
+         ======================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">01 // IDENTITY</span>
+          <h2 class="section-title">Beyond the Code.</h2>
+          <p class="section-subtitle">
+            A developer who sees programming not as mechanical syntax, but as the art of engineering intuitive, meaningful digital experiences.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Narrative Card -->
+          <div class="glass-card about-bio-card reveal-slide-right">
+            <div>
+              <p class="about-intro-text">
+                "I craft human-centered web applications that unite structural logic, fluid interaction design, and uncompromising performance."
+              </p>
+
+              <div class="about-paragraphs">
+                <p>
+                  As an aspiring software engineer and Frontend Development Intern with <strong>Code Alpha</strong>, I focus on building modern, robust, and accessible web interfaces using the fundamental pillars of the web: semantic HTML5, modern CSS3 tokens, and asynchronous Vanilla JavaScript.
+                </p>
+                <p>
+                  My development philosophy revolves around eliminating unnecessary baggage, maintaining crisp architectural clarity, and ensuring that every millisecond of interaction feels effortless for the end user.
+                </p>
+                <p>
+                  Beyond routine coding, I am deeply intrigued by algorithmic efficiency, system design, creative coding, and modern web animation architectures.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stats Counter Row -->
+            <div class="stats-row">
+              <div class="stat-box">
+                <span class="stat-number gradient-text">03+</span>
+                <span class="stat-label">Production Apps</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number gradient-text">100%</span>
+                <span class="stat-label">Vanilla Stack</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number gradient-text">0.0s</span>
+                <span class="stat-label">Framework Bloat</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number gradient-text">2026</span>
+                <span class="stat-label">Code Alpha Cohort</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Info Panel & Philosophy Column -->
+          <div class="bento-column reveal-slide-left">
+            <!-- Customizable Personal Details Card -->
+            <div class="glass-card personal-info-card">
+              <h3 class="card-inner-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Developer Profile Details
+              </h3>
+
+              <!-- CUSTOMIZABLE: Easily update personal information below -->
+              <ul class="info-details-list">
+                <li class="info-item">
+                  <span class="info-label">Full Name</span>
+                  <span class="info-value">Yash Mahamuni</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Kolhapur, Maharashtra, India</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Degree &amp; Branch</span>
+                  <span class="info-value">B.Tech in AI/DS (Artificial Intelligence &amp; Data Science)</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">University</span>
+                  <span class="info-value highlight">Sanjay Ghodawat University, Kolhapur (2026 – 2030)</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Current Focus</span>
+                  <span class="info-value highlight">Modern UI &amp; Vanilla JS Architecture</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">Internship</span>
+                  <span class="info-value highlight">Code Alpha Frontend Intern</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Code Philosophy Bento -->
+            <div class="glass-card philosophy-card">
+              <h3 class="card-inner-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                Core Engineering Tenets
+              </h3>
+
+              <div class="philosophy-grid">
+                <div class="philosophy-item">
+                  <span class="philosophy-num">01.</span>
+                  <h4 class="philosophy-title">Clarity First</h4>
+                  <p class="philosophy-desc">Clean, readable, modular code over clever, brittle shortcuts.</p>
+                </div>
+                <div class="philosophy-item">
+                  <span class="philosophy-num">02.</span>
+                  <h4 class="philosophy-title">Accessibility</h4>
+                  <p class="philosophy-desc">Digital experiences should be universal, semantic, and keyboard navigable.</p>
+                </div>
+                <div class="philosophy-item">
+                  <span class="philosophy-num">03.</span>
+                  <h4 class="philosophy-title">Speed &amp; Motion</h4>
+                  <p class="philosophy-desc">Subtle micro-animations paired with zero bundle weight.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         D. SKILLS AND TECHNOLOGIES SECTION
+         ======================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">02 // TECHNICAL ARSENAL</span>
+          <h2 class="section-title">My Technical Arsenal.</h2>
+          <p class="section-subtitle">
+            Curated tools and competencies mastered through deliberate practice, practical projects, and the Code Alpha Internship.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="skills-filter-wrapper reveal-fade">
+          <div class="filter-pills">
+            <button class="filter-btn skills-filter-btn active" data-skill-filter="all">All Disciplines</button>
+            <button class="filter-btn skills-filter-btn" data-skill-filter="frontend">Frontend</button>
+            <button class="filter-btn skills-filter-btn" data-skill-filter="programming">Programming</button>
+            <button class="filter-btn skills-filter-btn" data-skill-filter="tools">Tools &amp; Workflow</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid (No deceptive percentage bars!) -->
+        <div class="skills-grid">
+          <!-- Skill: HTML5 -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#e34f26;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 2l2 18 6 2 6-2 2-18H4z"></path><path d="M7 6h10l-1 9-4 1.5L8 15l-.5-4.5h8"></path></svg>
+              </div>
+              <span class="skill-category-badge">Frontend</span>
+            </div>
+            <h3 class="skill-title">HTML5</h3>
+            <p class="skill-desc">
+              Semantic element architecture, accessibility standards (ARIA), SEO meta optimization, and robust markup hierarchy.
+            </p>
+          </div>
+
+          <!-- Skill: CSS3 -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#264de4;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 2l2 18 6 2 6-2 2-18H4z"></path><path d="M7 6h10l-1 9-4 1.5L8 15"></path></svg>
+              </div>
+              <span class="skill-category-badge">Frontend</span>
+            </div>
+            <h3 class="skill-title">CSS3 &amp; Modern Styling</h3>
+            <p class="skill-desc">
+              CSS Custom Properties (Tokens), Flexbox, CSS Grid systems, glassmorphism, keyframe micro-animations, and fluid typography.
+            </p>
+          </div>
+
+          <!-- Skill: JavaScript ES6+ -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#f7df1e;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M9 8v8"></path><path d="M15 8v8a2 2 0 0 1-2 2h-1"></path></svg>
+              </div>
+              <span class="skill-category-badge">Frontend</span>
+            </div>
+            <h3 class="skill-title">JavaScript (ES6+)</h3>
+            <p class="skill-desc">
+              DOM manipulation, asynchronous operations (Promises/async-await), event delegation, state persistence with localStorage, and modular architecture.
+            </p>
+          </div>
+
+          <!-- Skill: Responsive Design -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#38bdf8;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <span class="skill-category-badge">Frontend</span>
+            </div>
+            <h3 class="skill-title">Responsive Design</h3>
+            <p class="skill-desc">
+              Fluid multi-breakpoint layouts across 375px to 1440px+, touch ergonomics, fluid scaling with clamp(), and cross-browser consistency.
+            </p>
+          </div>
+
+          <!-- Skill: C Language -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#6366f1;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <span class="skill-category-badge">Programming</span>
+            </div>
+            <h3 class="skill-title">C Programming</h3>
+            <p class="skill-desc">
+              Fundamental computing mechanics, memory management, pointer manipulation, and procedural problem-solving logic.
+            </p>
+          </div>
+
+          <!-- Skill: C++ -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#8b5cf6;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <span class="skill-category-badge">Programming</span>
+            </div>
+            <h3 class="skill-title">C++</h3>
+            <p class="skill-desc">
+              Object-oriented design (OOP), data structures (lists, trees, hash maps), STL containers, and algorithmic optimization.
+            </p>
+          </div>
+
+          <!-- Skill: Python -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#10b981;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 1 5 5v3H7V7a5 5 0 0 1 5-5z"></path><path d="M12 22a5 5 0 0 1-5-5v-3h10v3a5 5 0 0 1-5 5z"></path></svg>
+              </div>
+              <span class="skill-category-badge">Programming</span>
+            </div>
+            <h3 class="skill-title">Python</h3>
+            <p class="skill-desc">
+              Algorithmic logic, scripting, automated data formatting, clean readable syntax, and computer science foundations.
+            </p>
+          </div>
+
+          <!-- Skill: Git -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#f05032;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M6 9v12"></path><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+              </div>
+              <span class="skill-category-badge">Tools</span>
+            </div>
+            <h3 class="skill-title">Git</h3>
+            <p class="skill-desc">
+              Branching workflows, atomic commit history, stash management, merge conflict resolution, and local versioning integrity.
+            </p>
+          </div>
+
+          <!-- Skill: GitHub -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#f8fafc;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <span class="skill-category-badge">Tools</span>
+            </div>
+            <h3 class="skill-title">GitHub</h3>
+            <p class="skill-desc">
+              Remote repository hosting, pull request reviews, GitHub Pages deployment, Markdown documentation, and open source tracking.
+            </p>
+          </div>
+
+          <!-- Skill: VS Code -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#007acc;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              </div>
+              <span class="skill-category-badge">Tools</span>
+            </div>
+            <h3 class="skill-title">VS Code</h3>
+            <p class="skill-desc">
+              Streamlined editor workflows, debugging environments, live local serving, snippet optimization, and keyboard shortcuts.
+            </p>
+          </div>
+
+          <!-- Skill: Chrome DevTools -->
+          <div class="glass-card skill-card reveal-slide-up" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-box" style="color:#f59e0b;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              </div>
+              <span class="skill-category-badge">Tools</span>
+            </div>
+            <h3 class="skill-title">Chrome DevTools</h3>
+            <p class="skill-desc">
+              DOM and CSS inspection, network performance waterfalls, JavaScript breakpoint debugging, and mobile viewport simulation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         E. FEATURED PROJECTS SECTION
+         ======================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">03 // SELECTED WORKS</span>
+          <h2 class="section-title">Things I've Built.</h2>
+          <p class="section-subtitle">
+            Demonstrating engineered solutions, creative interactions, and clean code built during the Code Alpha Internship Program.
+          </p>
+        </div>
+
+        <!-- Project Filtering Bar -->
+        <div class="projects-filter-bar reveal-fade">
+          <button class="filter-btn project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn project-filter-btn" data-filter="webapp">Web Applications</button>
+          <button class="filter-btn project-filter-btn" data-filter="vanillajs">Vanilla JS</button>
+          <button class="filter-btn project-filter-btn" data-filter="tools">Tools &amp; Calc</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- 1. LUMINA — Image Gallery -->
+          <article class="glass-card project-card reveal-slide-up" data-category="webapp vanillajs">
+            <div class="project-media">
+              <img src="assets/images/lumina-preview.svg" alt="LUMINA Photography Gallery Preview" loading="lazy" />
+              <div class="project-media-overlay"></div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-featured-badge">Code Alpha Project 01</span>
+                <span class="hero-chip" style="font-size:0.75rem;">Interactive Gallery</span>
+              </div>
+
+              <h3 class="project-title">LUMINA — Image Gallery</h3>
+
+              <p class="project-description">
+                A modern photography gallery with category filters, dynamic real-time search, fullscreen image viewing with EXIF telemetry, and smooth keyboard navigation hotkeys.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3 Tokens</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">EXIF Viewer</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="../lumina-gallery/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" title="Launch Lumina Live Demo">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/mahamuniy31-cpu/Lumina-visual-gallery" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Inspect GitHub Repository">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <button class="btn btn-outline btn-sm" data-open-project="lumina" title="View Detailed Case Study">
+                  <span>View Details</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. NOVA CALC — Advanced Scientific Calculator -->
+          <article class="glass-card project-card reveal-slide-up" data-category="webapp tools vanillajs">
+            <div class="project-media">
+              <img src="assets/images/nova-calc-preview.svg" alt="NOVA CALC Scientific Calculator Preview" loading="lazy" />
+              <div class="project-media-overlay"></div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-featured-badge">Code Alpha Project 02</span>
+                <span class="hero-chip" style="font-size:0.75rem;">Computational Engine</span>
+              </div>
+
+              <h3 class="project-title">NOVA CALC — Advanced Calculator</h3>
+
+              <p class="project-description">
+                A modern scientific calculator featuring scientific operations, full keyboard hardware event support, audit calculation history with expression reuse, and dual OLED themes.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript ES6+</span>
+                <span class="tech-tag">CSS Grid Matrix</span>
+                <span class="tech-tag">Math Engine</span>
+                <span class="tech-tag">Keyboard Support</span>
+                <span class="tech-tag">Audit History</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="../nova-calc/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" title="Launch Nova Calc Live Demo">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/mahamuniy31-cpu/nova-calc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Inspect GitHub Repository">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <button class="btn btn-outline btn-sm" data-open-project="nova-calc" title="View Detailed Case Study">
+                  <span>View Details</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. AUREX — Personal Developer Portfolio -->
+          <article class="glass-card project-card reveal-slide-up" data-category="webapp vanillajs">
+            <div class="project-media">
+              <img src="assets/images/aurex-preview.svg" alt="AUREX Developer Portfolio Preview" loading="lazy" />
+              <div class="project-media-overlay"></div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-badge-row">
+                <span class="project-featured-badge">Code Alpha Capstone</span>
+                <span class="hero-chip" style="font-size:0.75rem;">Personal Brand</span>
+              </div>
+
+              <h3 class="project-title">AUREX — Developer Portfolio</h3>
+
+              <p class="project-description">
+                A responsive personal website showcasing skills, projects, and contact information with custom animations, theme memory, and an Awwwards-inspired design system.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3 Design System</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">IntersectionObserver</span>
+                <span class="tech-tag">Accessible</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="#home" class="btn btn-primary btn-sm" title="You are currently browsing AUREX">
+                  <span>Current Site</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </a>
+                <a href="https://github.com/mahamuniy31-cpu/aurex-portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Inspect GitHub Repository">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <button class="btn btn-outline btn-sm" data-open-project="aurex" title="View Detailed Case Study">
+                  <span>View Details</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- View All Projects CTA -->
+        <div class="all-projects-cta reveal-fade">
+          <a href="https://github.com/mahamuniy31-cpu?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>View All Repositories on GitHub</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         F. EDUCATION AND EXPERIENCE SECTION (TIMELINE)
+         ======================================================================== -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">04 // TRAJECTORY</span>
+          <h2 class="section-title">My Journey So Far.</h2>
+          <p class="section-subtitle">
+            A progression of academic foundations, self-driven mastery, and hands-on frontend engineering during the Code Alpha Internship.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Timeline Entry 1: Code Alpha Internship -->
+          <div class="timeline-item reveal-slide-up">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2026 // Current</span>
+                <span class="timeline-org">Code Alpha Internship Program</span>
+              </div>
+              <h3 class="timeline-title">Frontend Development Intern</h3>
+              <p class="timeline-desc">
+                Engineering production-quality web applications including the LUMINA Visual Gallery, NOVA CALC Scientific Calculator, and AUREX brand portfolio. Implementing responsive CSS token systems, state management, and accessible UI interactions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 2: University Education -->
+          <div class="timeline-item reveal-slide-up">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2026 – 2030</span>
+                <span class="timeline-org">Sanjay Ghodawat University, Kolhapur</span>
+              </div>
+              <h3 class="timeline-title">B.Tech in Artificial Intelligence &amp; Data Science (AI/DS)</h3>
+              <p class="timeline-desc">
+                Pursuing specialized undergraduate studies in AI and Data Science while mastering modern frontend systems, responsive web architecture, algorithmic problem solving, and building intelligent digital experiences.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 3: Advanced Web Development -->
+          <div class="timeline-item reveal-slide-up">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2024 – 2025</span>
+                <span class="timeline-org">Self-Directed &amp; Community Certifications</span>
+              </div>
+              <h3 class="timeline-title">Modern Web Development &amp; Creative Coding</h3>
+              <p class="timeline-desc">
+                Mastering asynchronous JavaScript (ES6+), DOM mechanics, CSS Grid architectures, and accessibility principles. Developed deep appreciation for lightweight, framework-free web architectures.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 4: Hackathons & Open Source -->
+          <div class="timeline-item reveal-slide-up">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2024 – 2026</span>
+                <span class="timeline-org">Developer Community &amp; Sprints</span>
+              </div>
+              <h3 class="timeline-title">Hackathons &amp; Open Source Projects</h3>
+              <p class="timeline-desc">
+                Collaborated in developer sprints, contributing to modular developer utilities, rapid prototyping, and publishing open-source projects on GitHub.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         G. SERVICES / WHAT I DO SECTION
+         ======================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">05 // CAPABILITIES</span>
+          <h2 class="section-title">What I Can Create.</h2>
+          <p class="section-subtitle">
+            Professional frontend capabilities tailored to create high-performing, delightful digital experiences for modern brands.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Frontend Development -->
+          <div class="glass-card service-card reveal-slide-up">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="service-title">Frontend Development</h3>
+            <p class="service-description">
+              Crafting clean, maintainable, and semantic client-side code with HTML5, CSS3, and ES6+ JavaScript. Dedicated to fast load times, semantic structure, and zero unnecessary bloat.
+            </p>
+          </div>
+
+          <!-- Service 2: Responsive Website Design -->
+          <div class="glass-card service-card reveal-slide-up">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="service-title">Responsive Website Design</h3>
+            <p class="service-description">
+              Engineering fluid layouts that gracefully adapt from 375px mobile screens to ultra-wide desktop monitors without layout shifts or horizontal clipping.
+            </p>
+          </div>
+
+          <!-- Service 3: Interactive Web Applications -->
+          <div class="glass-card service-card reveal-slide-up">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3 class="service-title">Interactive Web Applications</h3>
+            <p class="service-description">
+              Building dynamic, event-driven user interfaces: real-time computation engines, custom media galleries, dynamic filtering systems, and localStorage synchronization.
+            </p>
+          </div>
+
+          <!-- Service 4: UI Implementation -->
+          <div class="glass-card service-card reveal-slide-up">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+            </div>
+            <h3 class="service-title">UI Implementation</h3>
+            <p class="service-description">
+              Translating design mockups and Figma design systems into pixel-perfect code with subtle glassmorphic styling, smooth state transitions, and accessible contrast.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         H. RESUME SECTION
+         ======================================================================== -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">06 // CREDENTIALS</span>
+          <h2 class="section-title">Explore My Resume.</h2>
+          <p class="section-subtitle">
+            A concise overview of my academic foundation, technical capabilities, and project accomplishments.
+          </p>
+        </div>
+
+        <div class="glass-card resume-showcase reveal-slide-up">
+          <!-- Document Preview Visual Sheet -->
+          <div class="resume-preview-container">
+            <img src="assets/images/resume-preview.svg" alt="Yash Mahamuni Professional Resume Preview" loading="lazy" />
+          </div>
+
+          <!-- Resume Info & Actions -->
+          <div class="resume-content">
+            <div>
+              <span class="resume-status-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Official Resume PDF Available
+              </span>
+              <h3 style="font-size: 1.85rem; margin-top: 12px; margin-bottom: 12px; font-weight: 700; color: var(--text-primary);">
+                Ready for Internship &amp; Junior Roles
+              </h3>
+              <p class="resume-lead-text">
+                Explore a detailed breakdown of my education, programming stacks, Code Alpha projects, and engineering capabilities.
+              </p>
+            </div>
+
+            <ul class="resume-highlights-list">
+              <li class="resume-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Education:</strong> B.Tech in AI/DS — Sanjay Ghodawat University, Kolhapur (2026 – 2030)</span>
+              </li>
+              <li class="resume-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Specialization:</strong> Semantic HTML5, Modern CSS3 Tokens &amp; Vanilla JS</span>
+              </li>
+              <li class="resume-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Experience:</strong> Code Alpha Frontend Development Internship (2026)</span>
+              </li>
+              <li class="resume-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Verified Projects:</strong> LUMINA Gallery, NOVA CALC Engine &amp; AUREX</span>
+              </li>
+            </ul>
+
+            <!-- Resume Action Buttons -->
+            <div class="resume-actions">
+              <!-- Real, downloadable PDF file -->
+              <a href="assets/resume/Yash_Mahamuni_Resume.pdf" download="Yash_Mahamuni_Resume.pdf" class="btn btn-primary" title="Download Yash Mahamuni's Resume PDF">
+                <span>Download Resume (PDF)</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              </a>
+
+              <!-- Open PDF in new tab -->
+              <a href="assets/resume/Yash_Mahamuni_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="View PDF in New Tab">
+                <span>View in New Tab</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+
+              <!-- Contact Directly -->
+              <a href="#contact" class="btn btn-outline">
+                <span>Contact Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         I. CONTACT SECTION
+         ======================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header text-center reveal-fade">
+          <span class="section-tag">07 // LET'S TALK</span>
+          <h2 class="section-title">Let's Build Something Great.</h2>
+          <p class="section-subtitle">
+            Have an internship opening, a project proposal, or just want to discuss modern frontend engineering? My inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details Column -->
+          <div class="contact-info-col reveal-slide-right">
+            <div class="glass-card contact-hero-card">
+              <h3 style="font-size: 1.45rem; font-weight: 700; color: var(--text-primary);">
+                Direct Communication Channel
+              </h3>
+              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                Feel free to email me directly or copy the address below. I look forward to connecting!
+              </p>
+
+              <!-- Copy Email Box -->
+              <div class="email-copy-box">
+                <!-- CUSTOMIZABLE: Email address -->
+                <span class="email-text">mahamuniy31@gmail.com</span>
+                <button class="btn btn-primary btn-sm" data-copy-email title="Copy email address to clipboard">
+                  <span class="copy-icon-target">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </span>
+                  <span>Copy Email</span>
+                </button>
+              </div>
+
+              <!-- Quick Meta Details -->
+              <div class="contact-meta-cards">
+                <div class="glass-card contact-sub-card">
+                  <span class="sub-card-label">Location</span>
+                  <span class="sub-card-val">Maharashtra, India</span>
+                </div>
+                <div class="glass-card contact-sub-card">
+                  <span class="sub-card-label">Response Time</span>
+                  <span class="sub-card-val">&lt; 24 Hours</span>
+                </div>
+              </div>
+
+              <!-- Social Profiles -->
+              <div style="margin-top: 10px;">
+                <span class="sub-card-label" style="display:block; margin-bottom: 12px;">Social &amp; Developer Profiles</span>
+                <div class="hero-socials" style="margin-top: 0;">
+                  <a href="https://github.com/mahamuniy31-cpu" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </a>
+                  <a href="mailto:mahamuniy31@gmail.com" class="social-link" title="Send Direct Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/yash-mahamuni-993b09442?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="glass-card contact-form-card reveal-slide-left">
+            <h3 style="font-size: 1.45rem; font-weight: 700; color: var(--text-primary); margin-bottom: 20px;">
+              Send a Direct Message
+            </h3>
+
+            <form id="contact-form" novalidate>
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Mercer" required />
+                <span class="input-error" id="error-name">Please provide your name (at least 2 characters).</span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required />
+                <span class="input-error" id="error-email">Please provide a valid email address.</span>
+              </div>
+
+              <!-- Subject Input -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Internship Opportunity / Project Inquiry" required />
+                <span class="input-error" id="error-subject">Please enter a subject (at least 3 characters).</span>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  <span>Message</span>
+                  <span class="char-counter" id="message-char-count">0 / 1000</span>
+                </label>
+                <textarea id="contact-message" class="form-textarea" maxlength="1000" placeholder="Tell me about your project, timeline, or question..." required></textarea>
+                <span class="input-error" id="error-message">Message must contain at least 10 characters.</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <p class="form-footer-note">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; vertical-align:middle; margin-right:4px;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                Submitting opens your native mail client with these details prepared via mailto fallback. You can also connect Formspree or EmailJS by updating <code>js/main.js</code>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       J. FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" aria-label="AUREX Home">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 2 22 22 22"></polygon></svg>
+            </div>
+            <span>AUREX</span>
+          </a>
+          <p class="footer-tagline">
+            "Building Ideas. Creating Digital Experiences."
+          </p>
+        </div>
+
+        <ul class="footer-links" aria-label="Footer Navigation">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#journey" class="footer-link">Journey</a></li>
+          <li><a href="#services" class="footer-link">Services</a></li>
+          <li><a href="#resume" class="footer-link">Resume</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span>&copy; 2026 AUREX • Yash Mahamuni. All rights reserved.</span>
+          <span style="display:block; font-size:0.775rem; margin-top:4px; color:var(--text-muted);">
+            Engineered for the Code Alpha Internship Program. Pure HTML5, CSS3, &amp; Vanilla JavaScript.
+          </span>
+        </div>
+
+        <div class="hero-socials" style="margin-top:0;">
+          <a href="https://github.com/mahamuniy31-cpu" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="mailto:mahamuniy31@gmail.com" class="social-link" title="Send Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yash-mahamuni-993b09442?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button with circular progress ring -->
+  <button id="back-to-top" aria-label="Back to top of page" title="Scroll to top">
+    <svg class="progress-ring" viewBox="0 0 50 50">
+      <circle class="progress-ring-circle" stroke-width="3" fill="transparent" r="23" cx="25" cy="25"></circle>
+    </svg>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Project Quick View Modal -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-label="Project Details Modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div id="modal-content-area"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/projects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

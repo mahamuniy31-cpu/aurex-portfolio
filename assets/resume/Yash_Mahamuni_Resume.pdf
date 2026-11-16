@@ -1,0 +1,51 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >> endobj
+4 0 obj << /Length 2279 >>
+stream
+BT
+/F1 20 Tf 50 730 Td (YASH MAHAMUNI) Tj
+/F1 11 Tf 0 -20 Td (FRONTEND DEVELOPER | CODE ALPHA INTERNSHIP PROGRAM) Tj
+/F2 9 Tf 0 -15 Td (Email: mahamuniy31@gmail.com | LinkedIn: yash-mahamuni | Kolhapur, India) Tj
+0.7 0.7 0.7 RG 1 w 50 680 m 562 680 l S
+/F1 13 Tf 50 660 Td (PROFESSIONAL SUMMARY) Tj
+/F2 10 Tf 0 -16 Td (Passionate frontend developer crafting modern, high-performance, and responsive web applications.) Tj
+0 -14 Td (Currently participating in the Code Alpha Internship Program with focus on pure Vanilla JS and CSS3.) Tj
+/F1 13 Tf 0 -30 Td (TECHNICAL SKILLS) Tj
+/F1 10 Tf 0 -16 Td (Frontend:) Tj /F2 10 Tf 60 0 Td (HTML5, CSS3, JavaScript ES6+, Responsive Web Design, Flexbox, CSS Grid) Tj
+/F1 10 Tf -60 -15 Td (Languages:) Tj /F2 10 Tf 60 0 Td (C, C++, Python, Modern JavaScript) Tj
+/F1 10 Tf -60 -15 Td (Tools:) Tj /F2 10 Tf 60 0 Td (Git, GitHub, Visual Studio Code, Chrome DevTools, Netlify, Command Line) Tj
+/F1 13 Tf -60 -30 Td (FEATURED PROJECTS) Tj
+/F1 11 Tf 0 -18 Td (1. LUMINA - Visual Photography Gallery) Tj
+/F2 10 Tf 0 -14 Td (- Curated photography portfolio featuring category filters, dynamic search, and fullscreen view.) Tj
+0 -13 Td (- Repository: https://github.com/mahamuniy31-cpu/Lumina-visual-gallery) Tj
+/F1 11 Tf 0 -20 Td (2. NOVA CALC - Advanced Scientific Calculator) Tj
+/F2 10 Tf 0 -14 Td (- Precision calculation engine supporting trigonometry, logarithms, memory, and calculation history.) Tj
+0 -13 Td (- Repository: https://github.com/mahamuniy31-cpu/nova-calc) Tj
+/F1 11 Tf 0 -20 Td (3. AUREX - Personal Developer Portfolio) Tj
+/F2 10 Tf 0 -14 Td (- Awwwards-inspired developer brand website with dark/light themes, animations, and zero dependencies.) Tj
+0 -13 Td (- Repository: https://github.com/mahamuniy31-cpu/aurex-portfolio) Tj
+/F1 13 Tf 0 -30 Td (EXPERIENCE & EDUCATION) Tj
+/F1 10 Tf 0 -16 Td (Frontend Development Intern - Code Alpha) Tj /F2 9 Tf 320 0 Td (2026) Tj
+/F2 10 Tf -320 -14 Td (- Developing real-world web apps demonstrating responsive UI, modern design tokens, and modular JS.) Tj
+/F1 10 Tf 0 -20 Td (B.Tech AI/DS - Sanjay Ghodawat University, Kolhapur) Tj /F2 9 Tf 320 0 Td (2026 - 2030) Tj
+/F2 10 Tf -320 -14 Td (- Specialization: Artificial Intelligence, Data Science, Algorithms, Modern Web Architecture.) Tj
+ET
+endstream
+endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> endobj
+6 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000002582 00000 n 
+0000002657 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
+startxref
+2727
+%%EOF

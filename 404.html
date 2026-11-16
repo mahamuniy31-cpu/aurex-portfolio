@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | AUREX</title>
+  <meta name="description" content="404 Page Not Found — The page you requested does not exist on AUREX." />
+  <meta name="theme-color" content="#09090d" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+    .error-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      position: relative;
+    }
+    .error-code {
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 15vw, 11rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+      background: var(--grad-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 40px var(--accent-glow));
+    }
+    .error-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      margin-bottom: 16px;
+      color: var(--text-primary);
+    }
+    .error-desc {
+      font-size: 1.1rem;
+      max-width: 520px;
+      margin: 0 auto 32px;
+      color: var(--text-secondary);
+    }
+    .error-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-ambient">
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <main class="error-hero">
+    <div class="glass-card" style="padding: 60px 40px; max-width: 680px; width: 100%;">
+      <span class="section-tag" style="margin-bottom: 24px;">ERROR // 404</span>
+      <h1 class="error-code">404</h1>
+      <h2 class="error-title">Coordinate Not Found</h2>
+      <p class="error-desc">
+        The digital trajectory you are trying to reach has moved, vanished, or does not exist in this sector.
+      </p>
+
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span>Return to Safety (Home)</span>
+        </a>
+        <a href="index.html#contact" class="btn btn-secondary">
+          <span>Report an Issue</span>
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

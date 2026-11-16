@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="aurBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08080c"/>
+      <stop offset="100%" stop-color="#12101e"/>
+    </linearGradient>
+    <radialGradient id="aurGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#aurBg)"/>
+  <rect width="800" height="500" fill="url(#aurGlow)"/>
+
+  <!-- Window Header -->
+  <rect x="0" y="0" width="800" height="42" rx="16" fill="#11111a"/>
+  <rect x="0" y="26" width="800" height="16" fill="#11111a"/>
+  <circle cx="28" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="48" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="68" cy="21" r="6" fill="#10b981"/>
+  <text x="400" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-weight="500">aurex.dev / premium developer portfolio</text>
+
+  <!-- Hero Content Mockup -->
+  <g transform="translate(60, 80)">
+    <!-- Brand Pill -->
+    <rect width="180" height="30" rx="15" fill="rgba(139, 92, 246, 0.15)" stroke="#8b5cf6" stroke-width="1"/>
+    <circle cx="16" cy="15" r="4" fill="#a855f7"/>
+    <text x="28" y="19" fill="#c084fc" font-family="system-ui" font-size="11" font-weight="700">AUREX PORTFOLIO</text>
+
+    <!-- Headlines -->
+    <text x="0" y="70" fill="#f8fafc" font-family="'Space Grotesk', system-ui" font-size="34" font-weight="800">Turning Ideas Into</text>
+    <text x="0" y="115" fill="url(#textGrad)" font-family="'Space Grotesk', system-ui" font-size="36" font-weight="800">Digital Experiences.</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="150" fill="#94a3b8" font-family="system-ui" font-size="14">Building modern, responsive, and user-centric web applications.</text>
+
+    <!-- CTA buttons -->
+    <g transform="translate(0, 180)">
+      <rect width="150" height="42" rx="21" fill="#8b5cf6"/>
+      <text x="75" y="26" fill="#ffffff" font-family="system-ui" font-size="13" font-weight="700" text-anchor="middle">Explore My Work</text>
+
+      <rect x="165" y="0" width="140" height="42" rx="21" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+      <text x="235" y="26" fill="#cbd5e1" font-family="system-ui" font-size="13" font-weight="600" text-anchor="middle">Download CV</text>
+    </g>
+
+    <!-- Right Side Mockup Terminal -->
+    <g transform="translate(380, 20)">
+      <rect width="300" height="230" rx="16" fill="#13131e" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1.5"/>
+      <rect width="300" height="30" rx="16" fill="#1a1a28"/>
+      <rect y="16" width="300" height="14" fill="#1a1a28"/>
+      <circle cx="20" cy="15" r="4.5" fill="#ef4444"/>
+      <circle cx="35" cy="15" r="4.5" fill="#f59e0b"/>
+      <circle cx="50" cy="15" r="4.5" fill="#10b981"/>
+      <text x="150" y="19" fill="#64748b" font-family="monospace" font-size="10" text-anchor="middle">developer.config.js</text>
+
+      <text x="20" y="60" fill="#8b5cf6" font-family="monospace" font-size="12">const <tspan fill="#38bdf8">developer</tspan> = {</text>
+      <text x="35" y="85" fill="#94a3b8" font-family="monospace" font-size="12">name: <tspan fill="#34d399">"Yash Mahamuni"</tspan>,</text>
+      <text x="35" y="110" fill="#94a3b8" font-family="monospace" font-size="12">program: <tspan fill="#f59e0b">"Code Alpha"</tspan>,</text>
+      <text x="35" y="135" fill="#94a3b8" font-family="monospace" font-size="12">role: <tspan fill="#34d399">"Frontend Developer"</tspan>,</text>
+      <text x="35" y="160" fill="#94a3b8" font-family="monospace" font-size="12">status: <tspan fill="#38bdf8">"Ready to Build"</tspan></text>
+      <text x="20" y="185" fill="#8b5cf6" font-family="monospace" font-size="12">};</text>
+      <text x="20" y="210" fill="#64748b" font-family="monospace" font-size="11">// 100% Vanilla JS &amp; Modern CSS</text>
+    </g>
+  </g>
+</svg>

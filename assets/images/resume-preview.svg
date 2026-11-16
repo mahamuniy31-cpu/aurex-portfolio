@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Paper Sheet with subtle shadow -->
+  <rect width="600" height="800" rx="8" fill="#ffffff"/>
+  
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="600" height="8" fill="url(#headerGrad)"/>
+
+  <!-- Resume Header -->
+  <g transform="translate(45, 50)">
+    <text x="0" y="24" fill="#0f172a" font-family="system-ui, sans-serif" font-size="26" font-weight="800">YASH MAHAMUNI</text>
+    <text x="0" y="48" fill="#7c3aed" font-family="system-ui, sans-serif" font-size="14" font-weight="700">FRONTEND DEVELOPER &amp; SOFTWARE ENTHUSIAST</text>
+    <text x="0" y="72" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">mahamuniy31@gmail.com • linkedin.com/in/yash-mahamuni-993b09442 • Kolhapur, India</text>
+    <line x1="0" y1="88" x2="510" y2="88" stroke="#e2e8f0" stroke-width="1.5"/>
+  </g>
+
+  <!-- Section: Professional Summary -->
+  <g transform="translate(45, 160)">
+    <text x="0" y="16" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="800" letter-spacing="1">PROFESSIONAL SUMMARY</text>
+    <line x1="0" y1="24" x2="510" y2="24" stroke="#7c3aed" stroke-width="1"/>
+    <text x="0" y="44" fill="#475569" font-family="system-ui, sans-serif" font-size="11" font-weight="400">Passionate frontend developer crafting modern, high-performance, and responsive web applications.</text>
+    <text x="0" y="60" fill="#475569" font-family="system-ui, sans-serif" font-size="11" font-weight="400">Intern at Code Alpha specializing in HTML5, CSS3, ES6+ Vanilla JavaScript, and accessible UI engineering.</text>
+  </g>
+
+  <!-- Section: Technical Skills -->
+  <g transform="translate(45, 250)">
+    <text x="0" y="16" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="800" letter-spacing="1">TECHNICAL SKILLS</text>
+    <line x1="0" y1="24" x2="510" y2="24" stroke="#7c3aed" stroke-width="1"/>
+    <text x="0" y="44" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Frontend:</text>
+    <text x="65" y="44" fill="#475569" font-family="system-ui, sans-serif" font-size="11">HTML5, CSS3, Modern JavaScript (ES6+), Responsive Design, CSS Grid, Flexbox</text>
+    <text x="0" y="64" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Programming:</text>
+    <text x="95" y="64" fill="#475569" font-family="system-ui, sans-serif" font-size="11">C, C++, Python, Data Structures &amp; Algorithms</text>
+    <text x="0" y="84" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Tools &amp; Workflow:</text>
+    <text x="110" y="84" fill="#475569" font-family="system-ui, sans-serif" font-size="11">Git, GitHub, VS Code, Chrome DevTools, Netlify, Linux/Windows CLI</text>
+  </g>
+
+  <!-- Section: Experience -->
+  <g transform="translate(45, 365)">
+    <text x="0" y="16" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="800" letter-spacing="1">INTERNSHIP EXPERIENCE</text>
+    <line x1="0" y1="24" x2="510" y2="24" stroke="#7c3aed" stroke-width="1"/>
+
+    <text x="0" y="46" fill="#0f172a" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Frontend Development Intern</text>
+    <text x="510" y="46" fill="#7c3aed" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">2026</text>
+    <text x="0" y="62" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-style="italic">Code Alpha Internship Program</text>
+    <text x="10" y="82" fill="#475569" font-family="system-ui, sans-serif" font-size="10.5">• Engineered modular interactive frontend solutions including LUMINA Gallery and NOVA CALC.</text>
+    <text x="10" y="98" fill="#475569" font-family="system-ui, sans-serif" font-size="10.5">• Spearheaded responsive layouts, keyboard accessibility, CSS animations, and state persistence.</text>
+  </g>
+
+  <!-- Section: Key Projects -->
+  <g transform="translate(45, 495)">
+    <text x="0" y="16" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="800" letter-spacing="1">FEATURED PROJECTS</text>
+    <line x1="0" y1="24" x2="510" y2="24" stroke="#7c3aed" stroke-width="1"/>
+
+    <text x="0" y="44" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">LUMINA — Editorial Visual Gallery</text>
+    <text x="510" y="44" fill="#64748b" font-family="monospace" font-size="10" text-anchor="end">HTML5, CSS3, Vanilla JS</text>
+    <text x="10" y="62" fill="#475569" font-family="system-ui, sans-serif" font-size="10.5">• Curated photography platform with category filters, dynamic search, keyboard navigation, and EXIF viewer.</text>
+
+    <text x="0" y="88" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">NOVA CALC — Advanced Scientific Calculator</text>
+    <text x="510" y="88" fill="#64748b" font-family="monospace" font-size="10" text-anchor="end">JavaScript, CSS Grid, Math Engine</text>
+    <text x="10" y="106" fill="#475569" font-family="system-ui, sans-serif" font-size="10.5">• Precision calculation engine supporting scientific functions, calculation history, and keyboard shortcuts.</text>
+
+    <text x="0" y="132" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">AUREX — Personal Developer Brand Portfolio</text>
+    <text x="510" y="132" fill="#64748b" font-family="monospace" font-size="10" text-anchor="end">Vanilla JS, Modern CSS Tokens</text>
+    <text x="10" y="150" fill="#475569" font-family="system-ui, sans-serif" font-size="10.5">• High-performance portfolio featuring theme persistence, dynamic filtering, toast system, and zero dependencies.</text>
+  </g>
+
+  <!-- Section: Education -->
+  <g transform="translate(45, 680)">
+    <text x="0" y="16" fill="#0f172a" font-family="system-ui, sans-serif" font-size="13" font-weight="800" letter-spacing="1">EDUCATION</text>
+    <line x1="0" y1="24" x2="510" y2="24" stroke="#7c3aed" stroke-width="1"/>
+    <text x="0" y="44" fill="#0f172a" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">B.Tech in Artificial Intelligence &amp; Data Science (AI/DS)</text>
+    <text x="510" y="44" fill="#7c3aed" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="end">2026 – 2030</text>
+    <text x="0" y="60" fill="#64748b" font-family="system-ui, sans-serif" font-size="10.5">Sanjay Ghodawat University, Kolhapur • Core Focus: AI/DS, Data Structures, Modern Web Systems</text>
+  </g>
+</svg>

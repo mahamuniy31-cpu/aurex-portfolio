@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="luminaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#14141e"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="imgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="imgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="imgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#luminaBg)"/>
+  
+  <!-- Window Header -->
+  <rect x="0" y="0" width="800" height="42" rx="16" fill="#161622"/>
+  <rect x="0" y="26" width="800" height="16" fill="#161622"/>
+  <circle cx="28" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="48" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="68" cy="21" r="6" fill="#10b981"/>
+
+  <!-- Search / Title Bar in Header -->
+  <rect x="180" y="10" width="440" height="22" rx="11" fill="#0d0d14"/>
+  <text x="400" y="25" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" font-weight="500">lumina-gallery.internal / search photography...</text>
+
+  <!-- Lumina Logo & Nav -->
+  <g transform="translate(36, 70)">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <circle cx="12" cy="12" r="4" fill="#f59e0b"/>
+    <text x="32" y="18" fill="#ffffff" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" font-weight="700" letter-spacing="2">LUMINA</text>
+    <text x="145" y="16" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">EDITORIAL GALLERY</text>
+  </g>
+
+  <!-- Filter Pills -->
+  <g transform="translate(36, 115)">
+    <rect x="0" y="0" width="56" height="26" rx="13" fill="#f59e0b"/>
+    <text x="28" y="17" fill="#000000" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">All</text>
+
+    <rect x="66" y="0" width="90" height="26" rx="13" fill="#1e1e2d" stroke="rgba(255,255,255,0.1)"/>
+    <text x="111" y="17" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="middle">Architecture</text>
+
+    <rect x="166" y="0" width="85" height="26" rx="13" fill="#1e1e2d" stroke="rgba(255,255,255,0.1)"/>
+    <text x="208" y="17" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="middle">Landscape</text>
+
+    <rect x="261" y="0" width="70" height="26" rx="13" fill="#1e1e2d" stroke="rgba(255,255,255,0.1)"/>
+    <text x="296" y="17" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="middle">Portrait</text>
+  </g>
+
+  <!-- Image Grid in Lumina -->
+  <!-- Card 1 -->
+  <g transform="translate(36, 160)">
+    <rect width="225" height="300" rx="12" fill="url(#imgGrad1)"/>
+    <!-- Glass overlay at bottom -->
+    <rect y="220" width="225" height="80" rx="0" fill="rgba(10, 10, 16, 0.85)"/>
+    <text x="16" y="250" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Alpine Solitude</text>
+    <text x="16" y="270" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Landscape • ISO 100 • 24mm</text>
+    <circle cx="195" cy="256" r="14" fill="#f59e0b"/>
+    <path d="M 191 256 L 199 256 M 195 252 L 195 260" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(287, 160)">
+    <rect width="225" height="300" rx="12" fill="url(#imgGrad2)"/>
+    <rect y="220" width="225" height="80" rx="0" fill="rgba(10, 10, 16, 0.85)"/>
+    <text x="16" y="250" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Neon Monolith</text>
+    <text x="16" y="270" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Architecture • f/1.8 • 50mm</text>
+    <circle cx="195" cy="256" r="14" fill="#a855f7"/>
+    <path d="M 191 256 L 199 256 M 195 252 L 195 260" stroke="#fff" stroke-width="2"/>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(538, 160)">
+    <rect width="225" height="300" rx="12" fill="url(#imgGrad3)"/>
+    <rect y="220" width="225" height="80" rx="0" fill="rgba(10, 10, 16, 0.85)"/>
+    <text x="16" y="250" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Emerald Canopy</text>
+    <text x="16" y="270" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Nature • 1/250s • 85mm</text>
+    <circle cx="195" cy="256" r="14" fill="#10b981"/>
+    <path d="M 191 256 L 199 256 M 195 252 L 195 260" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

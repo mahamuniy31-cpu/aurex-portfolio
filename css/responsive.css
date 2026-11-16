@@ -1,0 +1,391 @@
+/* ==========================================================================
+   AUREX — RESPONSIVE STYLESHEET
+   Comprehensive Cross-Device Media Queries (1440px, 1024px, 768px, 425px, 375px)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LAPTOPS & SMALL DESKTOPS (<= 1200px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+  :root {
+    --container-max: 1040px;
+  }
+
+  .hero-grid {
+    gap: 40px;
+  }
+
+  .developer-card-wrapper {
+    max-width: 380px;
+  }
+
+  .about-grid {
+    gap: 24px;
+  }
+
+  .project-card,
+  .project-card:nth-child(even) {
+    gap: 30px;
+    padding: 28px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLETS & SMALL LAPTOPS (<= 1024px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  :root {
+    --container-max: 920px;
+    --nav-height: 70px;
+  }
+
+  .section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 4.8vw, 3.4rem);
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 36px;
+  }
+
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .resume-showcase {
+    gap: 36px;
+    padding: 36px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLETS & MOBILE BREAKPOINT (<= 992px)
+   Switch to Mobile Navigation & Single Column Layouts
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 992px) {
+  .nav-links {
+    display: none; /* Handled by mobile drawer */
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .availability-pill {
+    display: none; /* Saved for mobile drawer or hero */
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--nav-height) + 40px);
+    padding-bottom: 70px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-badge-wrapper {
+    justify-content: center;
+  }
+
+  .hero-role-wrapper {
+    justify-content: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-chips {
+    justify-content: center;
+  }
+
+  .hero-ctas {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .developer-card-wrapper {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .float-badge-1 {
+    right: -10px;
+  }
+
+  .float-badge-2 {
+    left: -10px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .resume-showcase {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+    gap: 32px;
+  }
+
+  .resume-preview-container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. MEDIUM & SMALL TABLETS (<= 768px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  :root {
+    --nav-height: 66px;
+  }
+
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .project-card,
+  .project-card:nth-child(even) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .project-card:nth-child(even) .project-media {
+    order: 0;
+  }
+
+  .project-card:nth-child(even) .project-info {
+    order: 1;
+  }
+
+  .project-title {
+    font-size: 1.55rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  .timeline-wrapper::before {
+    left: 12px;
+  }
+
+  .timeline-item {
+    padding-left: 44px;
+    margin-bottom: 36px;
+  }
+
+  .timeline-dot {
+    left: 3px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .timeline-card {
+    padding: 20px;
+  }
+
+  .contact-meta-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card {
+    padding: 24px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  #back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. MOBILE SCREENS (<= 480px / 425px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-role-wrapper {
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .developer-card-wrapper {
+    max-width: 320px;
+  }
+
+  .float-badge {
+    display: none; /* Hide floating badges on tight mobile screens to prevent overflow */
+  }
+
+  .about-bio-card {
+    padding: 24px 20px;
+  }
+
+  .personal-info-card {
+    padding: 24px 20px;
+  }
+
+  .info-details-list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .filter-pills {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: var(--radius-md);
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .resume-actions .btn {
+    width: 100%;
+  }
+
+  .email-copy-box {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .email-copy-box .btn {
+    width: 100%;
+  }
+
+  .modal-card {
+    padding: 24px 18px;
+  }
+
+  #toast-container {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .toast {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. EXTRA SMALL MOBILE (<= 375px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 375px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .brand-logo {
+    font-size: 1.3rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .service-card {
+    padding: 24px 18px;
+  }
+}
